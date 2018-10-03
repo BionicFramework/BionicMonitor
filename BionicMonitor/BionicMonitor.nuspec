@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/bmsantos/BionicMonitor</projectUrl>
+    <iconUrl>https://vectr.com/bmsantos/a2sGndBV8e.svg?width=256&amp;height=256&amp;select=a2sGndBV8epage0</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Bionic Monitor - Live Reload CLI for Blazor/Bionic Apps.</releaseNotes>
+    <Copyright>(c) Bionic. All rights reserved.</Copyright>
+    <tags>bionic blazor ionic bruno santos</tags>
+  </metadata>
+</package>

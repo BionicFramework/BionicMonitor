@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BionicMonitor", "BionicMonitor\BionicMonitor.csproj", "{14E52AF7-74D9-4E1F-AF8D-677C9A419A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BionicMonitorService", "BionicMonitorService\BionicMonitorService.csproj", "{EDCCCBF8-82BE-4D0B-858F-C96B573B1BF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14E52AF7-74D9-4E1F-AF8D-677C9A419A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E52AF7-74D9-4E1F-AF8D-677C9A419A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E52AF7-74D9-4E1F-AF8D-677C9A419A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E52AF7-74D9-4E1F-AF8D-677C9A419A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCCCBF8-82BE-4D0B-858F-C96B573B1BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCCCBF8-82BE-4D0B-858F-C96B573B1BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCCCBF8-82BE-4D0B-858F-C96B573B1BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCCCBF8-82BE-4D0B-858F-C96B573B1BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
