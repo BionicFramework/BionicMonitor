@@ -11,10 +11,10 @@ namespace BionicMonitorService.Services {
   public class WatcherService : IWatcherService {
     private static readonly Regex SignalRRegEx =
       new Regex(
-        @"<script src=""https:\/\/unpkg\.com\/@aspnet\/signalr@\d?\.\d?\.\d?\/dist\/browser\/signalr\.min\.js""><\/script>",
+        @"<script WARNING=""Injected by Bionic Monitor"" src=""https:\/\/unpkg\.com\/@aspnet\/signalr@\d?\.\d?\.\d?\/dist\/browser\/signalr\.min\.js""><\/script>",
         RegexOptions.Compiled);
     private static readonly Regex ReloaderRegEx= new Regex(
-        @"<script src=""bionic/reloader.js""></script>",
+        @"<script WARNING=""Injected by Bionic Monitor"" src=""bionic/reloader.js""></script>",
         RegexOptions.Compiled);
 
     private List<FileSystemWatcher> _watchers = new List<FileSystemWatcher>(); 
@@ -99,7 +99,7 @@ namespace BionicMonitorService.Services {
           modified = true;
           all = all.Replace(
             "</head>",
-            $"<script src=\"https://unpkg.com/@aspnet/signalr@1.0.3/dist/browser/signalr.min.js\"></script>\n</head>"
+            "<script WARNING=\"Injected by Bionic Monitor\" src=\"https://unpkg.com/@aspnet/signalr@1.0.3/dist/browser/signalr.min.js\"></script>\n</head>"
           );
         }
 
@@ -108,7 +108,7 @@ namespace BionicMonitorService.Services {
           modified = true;
           all = all.Replace(
             "</head>",
-            $"<script src=\"bionic/reloader.js\"></script>\n</head>"
+            "<script WARNING=\"Injected by Bionic Monitor\" src=\"bionic/reloader.js\"></script>\n</head>"
           );
         }
 
