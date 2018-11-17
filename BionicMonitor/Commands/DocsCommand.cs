@@ -7,7 +7,7 @@ namespace BionicMonitor.Commands {
     protected override int OnExecute(CommandLineApplication app) => OpenBlazorDocs();
 
     private static int OpenBlazorDocs() {
-      var browser = BrowserUtils.OpenUrl("https://bmsantos.github.io/bionic/live-reload");
+      var browser = BrowserUtils.OpenUrl("https://bionicframework.github.io/Documentation/live-reload/");
       browser?.WaitForExit();
       return browser?.ExitCode ?? 1;
     }
