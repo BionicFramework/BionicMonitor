@@ -2,7 +2,7 @@ using BionicMonitor.Utils;
 using McMaster.Extensions.CommandLineUtils;
 
 namespace BionicMonitor.Commands {
-  [Command(Description = "Initiate Bionic self-destruct sequence")]
+  [Command("uninstall", Description = "Initiate Bionic self-destruct sequence")]
   public class UninstallCommand : CommandBase {
     protected override int OnExecute(CommandLineApplication app) => UninstallBionic();
 

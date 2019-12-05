@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using BionicMonitorService.Hubs;
 using BionicMonitorService.Options;
@@ -38,13 +39,26 @@ namespace BionicMonitorService {
         childAppBuilder.UseSpa(spa => spa.Options.DefaultPageStaticFileOptions = staticFileOptions);
       });
 
-      var distPath = Path.Combine(Directory.GetCurrentDirectory(), "bin/Debug/netstandard2.0/dist");
+      var distPath = Path.Combine(Directory.GetCurrentDirectory(), "bin/Debug/netstandard2.1/dist");
       if (Directory.Exists(distPath)) {
         app.UseStaticFiles(new StaticFileOptions {
           FileProvider = new PhysicalFileProvider(distPath),
           ContentTypeProvider = CreateContentTypeProvider(),
           OnPrepareResponse = SetCacheHeaders
         });
+      }
+      else {
+        distPath = Path.Combine(Directory.GetCurrentDirectory(), "bin/Debug/netstandard2.0/dist");
+        if (Directory.Exists(distPath)) {
+          app.UseStaticFiles(new StaticFileOptions {
+            FileProvider = new PhysicalFileProvider(distPath),
+            ContentTypeProvider = CreateContentTypeProvider(),
+            OnPrepareResponse = SetCacheHeaders
+          });
+        }
+        else {
+          Console.WriteLine($"💀 Bionic Monitor was unable to find a netstandard (2.0 or 2.1) build directory. Please build project and restart Bionic Monitor.");
+        }
       }
 
       app.UseSignalR(routes => routes.MapHub<ReloadHub>("/reloadHub"));
