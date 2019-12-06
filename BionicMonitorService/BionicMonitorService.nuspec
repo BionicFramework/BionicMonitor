@@ -6,7 +6,7 @@
         <title>$title$</title>
         <authors>$author$</authors>
         <owners>$author$</owners>
-        <licenseUrl>https://raw.githubusercontent.com/BionicFramework/BionicCLI/master/LICENSE</licenseUrl>
+        <license>https://raw.githubusercontent.com/BionicFramework/BionicCLI/master/LICENSE</license>
         <projectUrl>https://github.com/BionicFramework/BionicMonitor</projectUrl>
         <iconUrl>https://vectr.com/bmsantos/a2sGndBV8e.svg?width=256&amp;height=256&amp;select=a2sGndBV8epage0</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
