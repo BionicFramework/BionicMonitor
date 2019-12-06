@@ -2,7 +2,7 @@ using BionicMonitorService.Utils;
 using McMaster.Extensions.CommandLineUtils;
 
 namespace BionicMonitor.Commands {
-  [Command(Description = "Open Bionic Monitor documentation page in browser")]
+  [Command("docs", Description = "Open Bionic Monitor documentation page in browser")]
   public class DocsCommand : CommandBase {
     protected override int OnExecute(CommandLineApplication app) => OpenBlazorDocs();
 

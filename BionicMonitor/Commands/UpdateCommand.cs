@@ -2,7 +2,7 @@ using BionicMonitor.Utils;
 using McMaster.Extensions.CommandLineUtils;
 
 namespace BionicMonitor.Commands {
-  [Command(Description = "Update Bionic Monitor to its latest incarnation")]
+  [Command("update", Description = "Update Bionic Monitor to its latest incarnation")]
   public class UpdateCommand : CommandBase {
     protected override int OnExecute(CommandLineApplication app) => UpdateBionic();
 

@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace BionicMonitor {
   [Command(Description = "🤖 Bionic Monitor - Live Reload for Blazor & Bionic projects")]
-  [Subcommand("docs", typeof(DocsCommand))]
-  [Subcommand("uninstall", typeof(UninstallCommand))]
-  [Subcommand("update", typeof(UpdateCommand))]
-  [Subcommand("version", typeof(VersionCommand))]
+  [Subcommand(typeof(DocsCommand))]
+  [Subcommand(typeof(UninstallCommand))]
+  [Subcommand(typeof(UpdateCommand))]
+  [Subcommand(typeof(VersionCommand))]
   public class Program {
     [Option("--bionic", Description =
       "Use Bionic root directory .bionic/wwwroot (will not mess with files in wwwroot)")]
